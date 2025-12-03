@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, mean_squared_error
 
-def srfa_(X, y, eps=1e-8, random_state=42):
+def srfa(X, y, eps=1e-8, random_state=42):
     np.random.seed(random_state)
     X = np.asarray(X)
     y = np.asarray(y)
